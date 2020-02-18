@@ -848,13 +848,14 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   system_progress = 0.75
 
-  script.Print("    ______ _       _           ");
-  script.Print("   |  ____| |     | |          ");
-  script.Print("   | |__  | | ___ | | _____    ");
-  script.Print("   |  __| | |/ _ \| |/ / _ \   ");
-  script.Print("   | |    | | (_) |   < (_) |  ");
-  script.Print("   |_|    |_|\___/|_|\_\___/   ");
-  script.Print("                               ");
+  script.Print("                                   ");
+  script.Print("   __             .___       __    ");
+  script.Print(" _/  |_  ____   __| _/____  |  | __");
+  script.Print(" \   __\/  _ \ / __ |\__  \ |  |/ /");
+  script.Print("  |  | (  <_> ) /_/ | / __ \|    < ");
+  script.Print("  |__|  \____/\____ |(____  /__|_ \ ");
+  script.Print("                   \/     \/     \/");
+  script.Print("                                   ");
 
   buildid = target_info.GetBuildProp("ro.modversion")
   androidver = target_info.GetBuildProp("ro.build.version.release")
