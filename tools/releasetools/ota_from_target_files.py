@@ -847,15 +847,13 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
       script.fstab["/system"].mount_point = "/"
 
   system_progress = 0.75
-
-  script.Print("                                   ");
-  script.Print("   __             .___       __    ");
-  script.Print(" _/  |_  ____   __| _/____  |  | __");
-  script.Print(" \   __\/  _ \ / __ |\__  \ |  |/ /");
-  script.Print("  |  | (  <_> ) /_/ | / __ \|    < ");
-  script.Print("  |__|  \____/\____ |(____  /__|_ \ ");
-  script.Print("                   \/     \/     \/");
-  script.Print("                                   ");
+  
+  script.Print("    __                    __             ");
+  script.Print("   / /_  ____  __________/ /____  _______");
+  script.Print("  / __ \/ __ \/ ___/ ___/ //_/ / / / ___/");
+  script.Print(" / /_/ / /_/ (__  |__  ) ,< / /_/ / /    ");
+  script.Print("/_.___/\____/____/____/_/|_|\__,_/_/     ");
+  script.Print("                                         ");
 
   buildid = target_info.GetBuildProp("ro.modversion")
   androidver = target_info.GetBuildProp("ro.build.version.release")
